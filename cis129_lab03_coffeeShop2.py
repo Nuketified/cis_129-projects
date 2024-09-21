@@ -13,6 +13,7 @@ pcoffee = float(5) # defines the value pcoffee as a float for arithmetic.
 pmuffin = float(4) # defines the value pmuffin as a float for arithmetic.
 pbagel = float (4.5) # defines the value pbagel as a float for arithmetic.
 pcookie = float (2.5) # defines thevalue pcookie as a float for arithmetic.
+# prices values set to floats because prices are rarely whole numbers
 coffeet = coffee * pcoffee  # multiplies amount by price for a total price of coffee before tax.
 muffint = muffin * pmuffin # multiplies amount by price for a total price of muffins before tax.
 bagelt = bagel * pbagel # multiplies amount by price for a total price of bagels before tax.

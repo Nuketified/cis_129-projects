@@ -58,6 +58,6 @@ def printBonus (storeAmount, empAmount):
             print("The store bonus amount is $", storeAmount)
             print("The employee bonus amount is $", empAmount)
             if (storeAmount == 6000) and (empAmount == 75):
-                print('Congrats you have reached he highest bonus amounts possible!')
+                print('Congrats you have reached the highest bonus amounts possible!')
         # calls main
 main()

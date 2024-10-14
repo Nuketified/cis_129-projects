@@ -10,7 +10,7 @@ def get_total_hot_dogs():
     return total
 
 # get the number of cookout attendees
-attendees = int(input('Please enter the number of cookout attendees.'))
+attendees = int(input("Please enter the number of cookout attendees."))
     
 # get the number of hot dogs per attendee
 hot_dogs = int(input("Please enter the number of hot dogs per person."))

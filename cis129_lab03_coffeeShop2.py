@@ -1,0 +1,24 @@
+coffee = input( "How many coffees would you like?")
+muffin = input( "How many muffins would you like?")
+bagel = input( "How many bagels would you like?")
+cookie = input( "How many cookies would you like?")
+coffee = int(coffee)
+muffin = int(muffin)
+bagel = int(bagel)
+cookie = int(cookie)
+pcoffee = float(5)
+pmuffin = float(4)
+pbagel = float (4.5)
+pcookie = float (2.5)
+coffeet = coffee * pcoffee
+muffint = muffin * pmuffin
+bagelt = bagel * pbagel
+cookiet = cookie * pcookie
+tax = (coffeet + muffint + bagelt + cookiet) * .06
+coffeetf =  format(coffeet, ".2f")   
+muffintf =  format(muffint, ".2f")
+bageltf = format(bagelt, ".2f")
+cookietf = format(cookiet, ".2f")
+taxf = format(tax, ".2f")
+total = format((coffeet + muffint + bagelt + cookiet + tax), ".2f")
+print (f"***************************************\nMy Coffee and Muffin Shop\nNumber of coffees bought?\n{coffee}\nNumber of muffins bought?\n{muffin}\nNumber of bagels bought?\n{bagel}\nNumber of cookies bought?\n{cookie}\n***************************************\n\n***************************************\nMy Coffee, Muffin, Bagel, and Cookie Shop Receipt\n\n{coffee} Coffee at $5 each: $ {coffeetf}\n{muffin} Muffins at $4 each: $ {muffintf}\n{bagel} Bagel at $4.50 each: $ {bageltf}\n{cookie} Cookie at $4.50 each: $ {cookietf}\n6% tax: $ {taxf}\n---------\nTotal $ {total}\n***************************************")

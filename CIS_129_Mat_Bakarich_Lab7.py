@@ -3,7 +3,7 @@
 # Oct 18, 2024
 
 #################################################
-# Theatre Seating Calculator#
+# Theatre Seating Calculato r#
 #################################################
 
 # this program displays seating prices per section, then gets user input for seat sales, then outputs the totals for sales data
@@ -36,9 +36,13 @@ def total_sales(tickets_sold):
 # display text to user to get user input, take the user inputs and print the totals to the user.
 def main():
     # define variables
+    #################################################
+    # add "0"s below in "subtotal" and "tickets_total" to add sections
+    #################################################
     subtotal = [0, 0, 0, 0]
     tickets_total = [0, 0, 0, 0]    
-    # add "0"s above in subtotal and tickets_total to add sections
+    #################################################
+    #################################################
     counter_a = 0
     global counter_b 
     counter_b = 0

@@ -52,7 +52,7 @@ def main():
     
     # get user input for seats sold in each section
     while counter_b < NUMBER_OF_SECTIONS:
-        #validate inputs 
+        # validate inputs 
         while True:
             try:
                 # get user input for seats sold in section 
@@ -73,7 +73,7 @@ def main():
        
 
 
-        #print the subtotal for the current section
+        # print the subtotal for the current section
         print(f"The total for ticket sales in Section {SECTION[counter_b]} is: ${total_sales(tickets_sold):,.2f}.")
         # store values to print later
         # call function to get total sales

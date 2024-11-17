@@ -4,7 +4,7 @@
 # Deitel & Deitel Exercise 9.2
 
 
-
+# define main function
 def main():
     # intialize variables
     
@@ -14,7 +14,8 @@ def main():
     count= 0
     # intialize the average grade to 0
     average = 0
-   
+
+    # try block for exception handling
     try:        
         # open file for reading   
         with open('grades.txt', mode='r') as grades:
@@ -49,7 +50,7 @@ def main():
 
         # print the average grade.
         print(f"The average grade is: {average:.2f}.\n")
-        
+    # handle exceptions    
     except FileNotFoundError:
         print("No such file found, please double check that grades.txt is in the correct directory and try again.")   
     except PermissionError:

@@ -3,6 +3,7 @@
 # November 12, 2024
 # Deitel & Deitel Exercise 9.1
 
+# define main function
 def main():
     
     # initialize variables

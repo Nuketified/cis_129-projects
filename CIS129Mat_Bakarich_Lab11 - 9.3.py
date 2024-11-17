@@ -8,6 +8,7 @@
 # import csv
 import csv
 
+# print variables to .csv ub tge following format:
 # firstname,lastname,exam1grade,exam2grade,exam3grade
 
 

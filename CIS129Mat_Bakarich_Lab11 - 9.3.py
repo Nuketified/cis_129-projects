@@ -53,7 +53,7 @@ def main():
                     while True:
                         exam_1_grade = int(input("Please enter Exam 1 grade."))
                         if exam_1_grade < 0 or exam_1_grade > GRADE_CAP:
-                            print("Please enter a number between '0' and '150'")
+                            print(f"Please enter a number between '0' and '{GRADE_CAP}'")
                         if 0 <= exam_1_grade < GRADE_CAP:
                            break
                     
@@ -61,7 +61,7 @@ def main():
                     while True:
                         exam_2_grade = int(input("Please enter Exam 2 grade."))
                         if exam_2_grade < 0 or exam_2_grade > GRADE_CAP:
-                            print("Please enter a number between '0' and '150'")
+                            print(f"Please enter a number between '0' and '{GRADE_CAP}'")
                         if 0 <= exam_2_grade < GRADE_CAP:
                            break    
 
@@ -69,7 +69,7 @@ def main():
                     while True:
                         exam_3_grade = int(input("Please enter Exam 3 grade."))
                         if exam_3_grade < 0 or exam_3_grade > GRADE_CAP:
-                            print("Please enter a number between '0' and '150'")
+                            print(f"Please enter a number between '0' and '{GRADE_CAP}'")
                         if 0 <= exam_3_grade < GRADE_CAP:
                            break        
                     

@@ -129,7 +129,7 @@ def main():
     print("\nThe pet's name is: ",Animal.get_name(),".",sep="")
        
     # print the type of pet.
-    print("\nThe type of pet is: ",Animal.get_type(),".",sep="")
+    print("\n",Animal.get_name()," is a ",Animal.get_type(),".",sep="")
     
     # print the pet's age. 
     print("\n",Animal.get_name(),"'s age is: ",Animal.get_age(),".\n",sep="") 

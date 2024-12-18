@@ -1,0 +1,86 @@
+ EventLink
+    #Allow tournament organizer to configure and save table layout in the existing graphical user interface.
+        
+        # in the create event menu, create a check-box labelled "Show table locations in CompanionApp?"
+            
+        # While this box is checked, display two additional options with a bullet point for selection:
+                # "Use Saved Layout"
+                    When this is selected, check to see if any table layouts have been saved.
+                        If yes, display the saved layouts and allow the user to use the interface to select one for the event. 
+                        If no, display, "No Saved Layouts found."
+                
+                # "Create New Layout"
+                    When this is selected, open a new browser tab with:    
+                        -a full screen visual representation of the table layout for the venue, with no tables represented.
+                        -an interactable visual interface at the bottom of the screen.
+                            This should include:
+                                -table to manually drag and drop to create new tables
+                                -trash icon
+                                -save icon
+                                -compass indicator pointing North, include buttons to rotate compass orientation by 90 degrees clockwise or 90 degrees counter-clockwise.
+                                -box with appropriately labelled fields for entering table/row values 
+                    -Lock the user to this window until it is closed.
+
+                # If the user selects the other option, close any windows displayed by the other button selection.
+
+
+        
+        
+            # The user will be able to enter values in the following fields: "total number of tables:", "total number of rows" "tables per row"
+            # If the user inputs 2 of the 3 values the program will use basic arithmetic to calculate the basic layout and display the tables.
+                Total number of tables = Total number of rows * tables per row
+                    Ignore non-integers inputs.
+
+            # This step may be repeated by changing the values in the boxes. The map displayed will update accordingly and overwrite the previous entries.
+
+            # Then the user will be able to manually drag and drop tables to adjust or drag them to a trash can icon to delete them, 
+            
+            
+        
+                
+            # the user can then save the layout using a save button displayed at the bottom.
+                -When the user clicks the save button:
+                    -Prompt the user with a pop-up window displaying 2 numbering examples displayed as images on highlightable buttons. 
+                        Only the most recently clicked one is highlighted.
+                        # examples: 1  2  3  4    1  2  3  4
+                                    5  6  7  8    8  7  6  5
+                                    9 10 11 12    9 10 11 12 
+
+
+                    -Display a check box labelled "Reverse table numbers?"
+                        -While checked, display the same images but instead of numbering from the initial table, start numbering from the final table and work backwards.
+                        -Update the buttons above so the numbers match when this box is checked or unchecked.
+                    The user will then click a button labelled "Save" or a button labelled "Cancel"
+                        
+                        When the "Save" button is clicked:  
+                           
+                            -check for the default save folder location locally.
+                                -If found, save to that location.
+                                -If not found, create it. Then save to that location.
+                                -close this window and return to the "Create Event" menu where the user will finish creating the event as normal.
+                        
+                        When the "Cancel" button is clicked:
+                            
+                                -close this window and return to the previous one where the user can continue editing the table layout.
+
+                    
+                    
+                    
+                        
+
+
+               Once saved, return the user to the original tab. Close this tab.
+
+            # the user then finishes creating the event as usual.                    
+ 
+ 
+ 
+ 
+ Companion App
+    # If the feature is enabled in the EventLink software, players registered for an event in the Companion App will be able to view a third tab when pairings are displayed every round.
+        # The first two options, “Pairings” and “Standings” already exist in the Companion App. Add a third tab to this interface.
+        # The first option is the "Pairings" with player name and table number. 
+        # The second option is currently "Standings" that displays the standings after the last completed round of the event.
+        # The third option will be "Table." and will take the user to a screen displaying the seating layout to the player and highlighting the location of their table.
+            # Use the data from pairings to get opponent name and table number and create a text object displaying that information on top of the map.
+                # Example: "Your match is at table 24 against Richard G."
